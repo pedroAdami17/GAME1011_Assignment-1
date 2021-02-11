@@ -74,4 +74,5 @@ class Survey
 
 /*To randomize the number of gaming/non gaming students, create a random number between 1 and the max value...
  * and assign it for gaming students. Subtract this number from total and assign it to the non gaming students.
+ * 
  */
