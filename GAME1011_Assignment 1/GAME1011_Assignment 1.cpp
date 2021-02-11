@@ -5,28 +5,37 @@ int numOfStudents;
 
 class Person
 {
+private:
+	const char *name[32] = { "Joseph", "Daniel", "Mark", "Lucas", "Pedro", "John", "Jason", "Justin", "Kevin", "Isaac", "Erik",
+		"Andy", "Paul", "Ricardo", "Nick", "Blake", "Fred", "Bruce", "Susan","Anna","Barbara","Nancy","Donna","Cindy","Lisa",
+		"Maggie","Molly","Vera","Tina","Brenda","Lucy","Janet"};
+	const char *age[33] = { "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33",
+		"34", "35", "36","37","38","39","40","41","42","43","44","45","46","47","48","49","50"};
 public:
-	string name;
-	int age;
+	
+	
 };
 
 class Student : public Person
 {
 public:
-	string collegeName, courseEnrolled;
-	int semester;
+	const char *collegeName[10]{"Centennial College","Georgian College", "Humber College", "St. Lawrence College",
+		"George Brown College", "Niagara College", "Seneca College"};
+	const char *courseEnrolled[15]{"Game Programming","Graphic Design","Fashion Management","Business","Marketing",
+		"Mechanical Engineering","Culinary Arts","3D Animation"};
+	const char *semester[8]{"1","2","3","4","5","6","7","8",};
 };
 
 class NonGamingStudent : public Student
 {
-	string streamingServ;
-	int hoursNum;
+	const char *streamingServ[6]{"Netflix","Youtube","Amazon Prime","Disney+","Hulu","HBO Max"};
+	const char *hoursNum[5]{ "1", "2", "3", "4", "5" };
 };
 
 class GamingStudent : public Student
 {
-	string gamingDevice;
-	int hoursNum;
+	const char *gamingDevice[6]{ "PS4", "PS5", "PC", "Xbox One", "Xbox Series X", "Mobile"};
+	const char *hoursNum[5]{"1", "2", "3", "4", "5"};
 };
 
 int main()
@@ -57,5 +66,12 @@ class Survey
 	 */
 	//if(surveyReady == 'y')
 		//do stuff
+	void cx (int xss)
+	{
+		;;
+	}
 };
 
+/*To randomize the number of gaming/non gaming students, create a random number between 1 and the max value...
+ * and assign it for gaming students. Subtract this number from total and assign it to the non gaming students.
+ */
