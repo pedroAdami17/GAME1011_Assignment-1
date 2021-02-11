@@ -5,9 +5,6 @@ int numOfStudents;
 
 class Person
 {
-	/*What I think I need here and for all the other classes:
-	 *Declare all the necessary ints and strings.
-	 */
 public:
 	string name;
 	int age;
@@ -32,14 +29,6 @@ class GamingStudent : public Student
 	int hoursNum;
 };
 
-class Survey
-{
-	/*Create an array using the numOfStudents as the size.
-	 *Make all the calculations that we need
-	 *Return the final  output.
-	 */
-};
-
 int main()
 {
 	char surveyReady = 0;
@@ -59,4 +48,14 @@ int main()
 
 	return 0;
 }
+
+class Survey
+{
+	/*Create an array using the numOfStudents as the size.
+	 *Make all the calculations that we need
+	 *Return the final  output.
+	 */
+	//if(surveyReady == 'y')
+		//do stuff
+};
 
